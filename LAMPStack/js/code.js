@@ -14,6 +14,8 @@ function doLogin()
 	let login = document.getElementById("loginName").value;
 	let password = document.getElementById("loginPassword").value;
 //	var hash = md5( password );
+	console.log(login);
+    	console.log(password);
 	
 	document.getElementById("loginResult").innerHTML = "";
 
@@ -22,6 +24,7 @@ function doLogin()
 	let jsonPayload = JSON.stringify( tmp );
 	
 	let url = urlBase + '/Login.' + extension;
+	console.log(url);
 
 	let xhr = new XMLHttpRequest();
 	xhr.open("POST", url, true);

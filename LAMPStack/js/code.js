@@ -46,7 +46,7 @@ function doLogin()
 
 				saveCookie();
 	
-				window.location.href = "color.html";
+				window.location.href = "https://dh977.github.io/ContactManager/LAMPStack/color.html";
 			}
 		};
 		xhr.send(jsonPayload);

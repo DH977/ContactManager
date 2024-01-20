@@ -1,4 +1,4 @@
-const urlBase = 'http://COP4331-5.com/LAMPAPI';
+const urlBase = 'https://dh977.github.io/ContactManager/LAMPStack/LAMPAPI';
 const extension = 'php';
 
 let userId = 0;

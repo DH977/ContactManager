@@ -183,5 +183,3 @@ function searchColor()
 	}
 	
 }
-//Event listener
-document.getElementById("loginButton").addEventListener("click", doLogin);

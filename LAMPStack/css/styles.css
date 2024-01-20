@@ -17,7 +17,7 @@ body
 {
     font-size: 30px;
     width: 70%;
-    margin-left: 15%;
+    margin-left: 0 auto;
     padding: 25px;
     background-color: #b2b2b2;
 }
@@ -26,7 +26,7 @@ body
 {
     font-size: 30px;
     width: 70%;
-    margin-left: 15%;
+    margin: 0 auto;
     padding: 25px;
     background-color: #b2b2b2;
 }

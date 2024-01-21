@@ -49,7 +49,7 @@ function doLogin()
 
 				saveCookie();
 	
-				window.location.href = "https://dh977.github.io/ContactManager/LAMPStack/color.html";
+				window.location.href = "color.html";
 			}
 		};
 		xhr.send(jsonPayload);

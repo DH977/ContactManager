@@ -32,7 +32,8 @@
 			$searchResults .= '{"firstName" : "'. $row["firstName"] .'", 
 				"lastName" : "'. $row["lastName"] .'",
 				"Phone" : "'. $row["Phone"] .'",
-				"Email" : "'. $row["Email"] .'"}';
+				"Email" : "'. $row["Email"] .'",
+    				"ID" : "'. $row["ID"] .'"}';
 		}
 		
 		if( $searchCount == 0 )

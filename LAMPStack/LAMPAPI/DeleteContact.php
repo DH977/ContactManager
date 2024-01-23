@@ -1,7 +1,7 @@
 <?php
 	$inData = getRequestInfo();
 	
-	$color = $inData["color"];
+	$ID = $inData["ID"];
 	$userId = $inData["userId"];
 
 	$conn = new mysqli("localhost", "TheBeast", "WeLoveCOP4331", "COP4331");
@@ -11,8 +11,8 @@
 	} 
 	else
 	{
-		$stmt = $conn->prepare("INSERT into Colors (UserId,Name) VALUES(?,?)");
-		$stmt->bind_param("ss", $userId, $color);
+		$stmt = $conn->prepare("DELETE from Contacts where (ID, userID) == VALUES(?,?)");
+		$stmt->bind_param("ss", $userId, $ID);
 		$stmt->execute();
 		$stmt->close();
 		$conn->close();

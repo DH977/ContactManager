@@ -16,7 +16,7 @@
 		$stmt->execute();
 		$stmt->close();
 		$conn->close();
-		echo "Deleted Successfully";
+		printf("Aff. Rows: %d\n", $conn->affected_rows);
 		returnWithError("");
 	}
 

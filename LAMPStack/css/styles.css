@@ -7,7 +7,7 @@ body
 {
     font-size: 40px;
     width: 100%;
-    margin: 0 auto;
+    margin: 2% 5%;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     color: #FFFFFF;
@@ -17,7 +17,7 @@ body
 {
     font-size: 30px;
     width: 70%;
-    margin: 0 auto;
+    margin-left: 15%;
     padding: 25px;
     background-color: #b2b2b2;
 }
@@ -26,7 +26,7 @@ body
 {
     font-size: 30px;
     width: 70%;
-    margin: 0 auto;
+    margin-left: 15%;
     padding: 25px;
     background-color: #b2b2b2;
 }
@@ -35,9 +35,37 @@ body
 {
     font-size: 30px;
     width: 70%;
-    margin: 0 auto;
+    margin-left: 15%;
     padding: 25px;
     background-color: #b2b2b2;
+}
+
+#colorList{
+	background-color: white;
+	display: block;
+	cursor: pointer;
+	padding: 5px;
+	width: 100%;
+	box-shadow: 0 10px 25px
+	tranistion: all .5s ease-in-out;
+}
+
+.dropdown{
+    position: relative;
+    display:  inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+
+}
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .buttons
@@ -55,25 +83,6 @@ body
     opacity: 50%;
 }
 
-.dropdown{
-    position: relative;
-    display:  inline-block;
-}
-
-.dropdown-content{
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 #loginName
 {
 	font-size: 30px;
@@ -85,6 +94,7 @@ body
 #searchText
 {
 	font-size: 30px;
+	
 }
 #colorText
 {

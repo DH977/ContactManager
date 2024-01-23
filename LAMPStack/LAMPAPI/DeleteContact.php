@@ -1,7 +1,7 @@
 <?php
 	$inData = getRequestInfo();
 	
-	$ID = $inData["ID"];
+	$contactId = $inData["ID"];
 	$userId = $inData["userId"];
 
 	$conn = new mysqli("localhost", "TheBeast", "WeLoveCOP4331", "COP4331");
@@ -12,10 +12,11 @@
 	else
 	{
 		$stmt = $conn->prepare("DELETE from Contacts where (ID, userID) == VALUES(?,?)");
-		$stmt->bind_param("ss", $userId, $ID);
+		$stmt->bind_param("ss", $userId, $contactId);
 		$stmt->execute();
 		$stmt->close();
 		$conn->close();
+		echo "Deleted Successfully";
 		returnWithError("");
 	}
 

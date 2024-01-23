@@ -17,7 +17,7 @@
 		$stmt->execute();
 		$stmt->close();
 		$conn->close();
-		printf("Aff. Rows: %d\n", $conn->affected_rows);
+		// printf("Aff. Rows: %d\n", $conn->affected_rows);
 		returnWithError("");
 	}
 

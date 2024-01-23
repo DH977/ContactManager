@@ -168,7 +168,7 @@ function searchColor()
 				
 				for( let i=0; i<jsonObject.results.length; i++ )
 				{
-					colorList += jsonObject.results[i];
+					colorList += jsonObject.results[i].firstName;
 					if( i < jsonObject.results.length - 1 )
 					{
 						colorList += "<br />\r\n";

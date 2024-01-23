@@ -13,7 +13,7 @@
 	} 
 	else
 	{
-		$stmt = $conn->prepare("select from Contacts where firstName like ? and UserID=?");
+		$stmt = $conn->prepare("select * from Contacts where firstName like ? and UserID=?");
 		$colorName = "%" . $inData["search"] . "%";
 		$stmt->bind_param("ss", $colorName, $inData["userId"]);
 		$stmt->execute();
@@ -27,12 +27,12 @@
 				$searchResults .= ",";
 			}
 			$searchCount++;
-			$searchResults .= '"' . $row["firstName"] . '"';
+			// $searchResults .= '"' . $row["firstName"] . '"'; WORKS
 			// Major change here
-			/*$searchResults .= '{"firstName" : "'. $row{"firstName"} .'", 
-				"lastName" : "'. $row{"lastName"} .'",
-				"Phone" : "'. $row{"Phone"} .'",
-				"Email" : "'. $row{"Email"} .'"}';*/
+			$searchResults .= '{"firstName" : "'. $row["firstName"] .'", 
+				"lastName" : "'. $row["lastName"] .'",
+				"Phone" : "'. $row["Phone"] .'",
+				"Email" : "'. $row["Email"] .'"}';
 		}
 		
 		if( $searchCount == 0 )

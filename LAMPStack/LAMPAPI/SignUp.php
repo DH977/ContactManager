@@ -18,8 +18,7 @@
 		// changed lines here
 		$stmt = $conn->prepare("INSERT into Users (firstName, lastName, login, password) 
 			VALUES(?,?,?,?)");
-		$stmt->bind_param("ss", $firstName, $lastName, 
-			$login, $password);
+		$stmt->bind_param("ssss", $firstName, $lastName, $login, $password);
 		$stmt->execute();
 		$stmt->close();
 		$conn->close();

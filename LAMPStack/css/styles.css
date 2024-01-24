@@ -40,6 +40,7 @@ body
     background-color: 848D97;
 	display: grid;
 	
+	
 }
 
 .buttons
@@ -99,27 +100,24 @@ body
     opacity: 50%;
 }
 
-
-
-.dropdown{
-    position: relative;
-    display:  inline-block;
+#colorList
+{
+            
+            background-color: 171B21;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+			grid-row: 2;
+			margin-top:-15;
+			width: 86%;
+			margin-left: 12%;
+			outline-color 3366ff;
+			color: E6EDF3
+			
+			
+			
 }
 
-.dropdown-content{
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
 
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 #loginName
 {
 	font-size: 30px;

@@ -1,13 +1,13 @@
 body 
 {
-    background-color: #707070;
+    background-color: #0d1117;
 }
 
 #title 
 {
     font-size: 40px;
     width: 100%;
-    margin: 2% 5%;
+    margin: 0 auto;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     color: #FFFFFF;
@@ -17,43 +17,95 @@ body
 {
     font-size: 30px;
     width: 70%;
-    margin-left: 15%;
+    margin: 0 auto;
     padding: 25px;
-    background-color: #b2b2b2;
+    background-color:  #0d1117
 }
 
 #loggedInDiv
 {
     font-size: 30px;
     width: 70%;
-    margin-left: 15%;
+    margin: 0 auto;
     padding: 25px;
-    background-color: #b2b2b2;
+    background-color: 848D97;
 }
 
 #accessUIDiv
 {
     font-size: 30px;
     width: 70%;
-    margin-left: 15%;
+    margin: 0 auto;
     padding: 25px;
-    background-color: #b2b2b2;
+    background-color: 848D97;
+	display: grid;
+	
 }
 
-#colorList{
-	background-color: white;
-	display: block;
-	cursor: pointer;
-	padding: 5px;
-	width: 100%;
-	box-shadow: 0 10px 25px
-	tranistion: all .5s ease-in-out;
+.buttons
+{
+    font-size: 30px;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 25%;
+    font-family: 'Ubuntu', sans-serif;
+                    
+	
 }
+
+.buttons:hover{
+    background-color: #00d5124f;
+    color: #FFFFFF;
+    opacity: 50%;
+}
+
+.searchButtonSearchPage
+{
+	font-size: 30px;
+    border-radius: 25px;
+    width: 20%;
+	height: 70%;
+    font-family: 'Ubuntu', arial;
+	grid-row: 1;
+	grid-column: 2;
+	
+	
+	
+}
+
+.searchButtonSearchPage:hover{
+    background-color: #00d5124f;
+    color: #FFFFFF;
+    opacity: 50%;
+}
+
+
+.addButtonSearchPage
+{
+	 font-size: 30px;
+    border-radius: 25px;
+    width: 6%;
+    position: relative;
+    font-family: 'Ubuntu', arial;
+	grid-row: 2;
+	margin-left: 90%;
+	
+	
+}
+
+.addButtonSearchPage:hover{
+    background-color: #00d5124f;
+    color: #FFFFFF;
+    opacity: 50%;
+}
+
+
 
 .dropdown{
     position: relative;
     display:  inline-block;
 }
+
 .dropdown-content{
     display: none;
     position: absolute;
@@ -64,25 +116,10 @@ body
     z-index: 1;
 
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-.buttons
-{
-    font-size: 30px;
-    border-radius: 25px;
-    width: 50%;
-    margin-left: 25%;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.buttons:hover{
-    background-color: #00d5124f;
-    color: #FFFFFF;
-    opacity: 50%;
-}
-
 #loginName
 {
 	font-size: 30px;
@@ -100,6 +137,12 @@ body
 {
 	font-size: 30px;
 }
+#box
+{
+	grid-row: 1;
+	width:110%;
+	grid-column: 1;
+}
 
 input[type="text"],input[type="password"]{
     border-radius: 25px;
@@ -108,6 +151,8 @@ input[type="text"],input[type="password"]{
     margin-left: 10%;
     margin-bottom: 2%;
     font-family: 'Ubuntu', sans-serif;
+	height:  70%;
+	
 }
 
 #inner-title{

@@ -19,7 +19,7 @@
      			OR Phone LIKE ?
 			OR Email LIKE ? AND UserID=?");
 		$search = "%" . $inData["search"] . "%";
-		$stmt->bind_param("ss", $search, $inData["userId"]);
+		$stmt->bind_param("sssss", $search, $search, $search, $search, $inData["userId"]);
 		$stmt->execute();
 		
 		$result = $stmt->get_result();

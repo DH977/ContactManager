@@ -102,20 +102,25 @@ body
 
 #colorList
 {
-            
-            background-color: 171B21;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-			grid-row: 2;
-			margin-top:-15;
-			width: 86%;
-			margin-left: 12%;
-			outline-color 3366ff;
-			color: E6EDF3
-			
-			
-			
+        background-color: 171B21;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	grid-row: 2;
+	margin-top:-15;
+	width: 86%;
+	margin-left: 12%;
+    	outline-color 3366ff;
+	color: E6EDF3
+	max-height:200px;		
+	overflow:auto;	
 }
+#colorList:hover{ 
+	cursor: pointer;
+}
+			
+			
+			
+
 
 
 #loginName

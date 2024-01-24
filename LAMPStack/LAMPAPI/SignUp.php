@@ -22,6 +22,7 @@
 		$stmt->execute();
 		$stmt->close();
 		$conn->close();
+		echo "New record created successfully";
 		returnWithError("");
 	}
 

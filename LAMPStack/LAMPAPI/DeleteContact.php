@@ -13,7 +13,7 @@
 	{
 		// $stmt = $conn->prepare("DELETE from Contacts where (ID, userID) == VALUES(?,?)");
 		$stmt = $conn->prepare("DELETE from Contacts where ID = VALUES(?)");
-		$stmt->bind_param("ss", $contactId);
+		$stmt->bind_param("s", $contactId);
 		$stmt->execute();
 		$stmt->close();
 		$conn->close();

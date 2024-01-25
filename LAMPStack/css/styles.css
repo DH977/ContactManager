@@ -9,7 +9,7 @@ body
     width: 100%;
     margin: auto;
     text-align: center;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Arial', sans-serif;
     color: #e6edf3;
 }
 
@@ -49,6 +49,7 @@ body
     padding: 25px;
     background-color: #161b22
 	display: grid;
+
 }
 .searchButtonSearchPage
 {
@@ -56,12 +57,13 @@ body
     border-radius: 25px;
     width: 11%;
 	height: 6.7%;
-    font-family: 'Ubuntu', arial;
+    font-family: 'Arial', sans-serif;
 	//grid-row: 1;
 	//grid-column: 1;
 	margin-left: 100%;
 	margin-top: -41;
 	//margin: auto;
+	background-color:#238636;
 	
 	
 }
@@ -80,7 +82,7 @@ body
     border-radius: 25px;
     width: 6%;
     position: relative;
-    font-family: 'Ubuntu', arial;
+    font-family: 'Arial', sans-serif;
 	grid-row: 2;
 	margin-left: 90%;
 	
@@ -120,6 +122,7 @@ body
 	margin: auto;
 	
 	
+	
 
 }
 
@@ -157,6 +160,7 @@ body
 #searchText
 {
 	font-size: 30px;
+	
 }
 #colorText
 {
@@ -168,11 +172,13 @@ input[type="text"],input[type="password"]{
     text-align: center;
     width: 90%;
 	margin: auto;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Arial', sans-serif;
 	border: 1px solid #3366FF
 	box-shadow: 0 0 1px 1px #3366FF;
-    outline: none;
-	color: #E6EDF3
+    outline: #171B21;
+	color: #E6EDF3;
+	background-color: 171B21
+	
 }
 
 #inner-title{
@@ -182,7 +188,7 @@ input[type="text"],input[type="password"]{
     text-align: center;
     margin-left: 5%;
     margin-bottom: 2%;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Arial', sans-serif;
     color: #e6edf3;
 }
 
@@ -193,7 +199,7 @@ input[type="text"],input[type="password"]{
     text-align: center;
     margin-left: 5%;
     margin-bottom: 2%;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Arial', sans-serif;
     color: #95060a;
 }
 
@@ -214,7 +220,7 @@ select{
     margin-left: 35%;
     margin-top: 2%;
     font-size: 0.75em;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 #colorSearchResult{
@@ -229,6 +235,7 @@ select{
     margin-left: 5%;
     margin-top: 2%;
     margin-bottom: 1%;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Arial', sans-serif;
     color: #95060a;
 }
+

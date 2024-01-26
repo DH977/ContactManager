@@ -144,7 +144,7 @@ function addColor()
 
 function searchColor()
 {
-	let srch = document.getElementById("searchText").value;
+	let srch = document.getElementById("inputSearchPage").value;
 	document.getElementById("colorSearchResult").innerHTML = "";
 	
 	let colorList = "";

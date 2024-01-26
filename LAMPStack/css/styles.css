@@ -9,7 +9,7 @@ body
     width: 100%;
     margin: auto;
     text-align: center;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     color: #e6edf3;
 }
 
@@ -21,11 +21,14 @@ body
     padding: 25px;
     background-color: #161b22
 	margin: auto;
+	color: white;
+	
+	
 }
 
 #loggedInDiv
 {
-    font-size: 30px;
+  font-size: 30px;
     width: 70%;
     margin: auto;
     padding: 25px;
@@ -49,7 +52,6 @@ body
     padding: 25px;
     background-color: #161b22
 	display: grid;
-
 }
 .searchButtonSearchPage
 {
@@ -61,9 +63,13 @@ body
 	//grid-row: 1;
 	//grid-column: 1;
 	margin-left: 100%;
-	margin-top: -41;
+	margin-top: -46;
 	//margin: auto;
 	background-color:#238636;
+	
+	
+	
+	
 	
 	
 }
@@ -82,7 +88,7 @@ body
     border-radius: 25px;
     width: 6%;
     position: relative;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Ubuntu', arial;
 	grid-row: 2;
 	margin-left: 90%;
 	
@@ -100,14 +106,14 @@ body
     background-color: 171B21;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
-	
-	margin: auto;
-	margin-top: -0.5%;
-	
-	width: 98%;
+	grid-row: 2;
+	margin-top:-2;
+	width: 86%;
+	margin-left: 10%;
     outline-color: 3366ff;
-	max-height:250px;		
-	overflow:auto;
+	color: #E6EDF3
+	max-height:200px;		
+	overflow: auto;
 	color: #E6EDF3
 }
 #colorListSearchPage:hover{ 
@@ -119,7 +125,6 @@ body
 	//grid-row: 1;
 	width:110%;
 	//grid-column: 1;
-	margin: auto;
 	
 	
 	
@@ -160,7 +165,6 @@ body
 #searchText
 {
 	font-size: 30px;
-	
 }
 #colorText
 {
@@ -170,15 +174,16 @@ body
 #inputSearchPage[type="text"],input[type="password"]{
     border-radius: 25px;
     text-align: center;
-    width: 90%;
+    width: 80%;
+	height: 6%;
     margin: auto;
+	margin-left: 7.8%;
     font-family: 'Arial', sans-serif;
     border: 1px solid #3366FF;
     box-shadow: 0 0 1px 1px #3366FF;
     outline: #171B21;
     color: #E6EDF3;
     background-color: 171B21
-	
 }
 
 #inner-title{
@@ -188,7 +193,7 @@ body
     text-align: center;
     margin-left: 5%;
     margin-bottom: 2%;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     color: #e6edf3;
 }
 
@@ -199,7 +204,7 @@ body
     text-align: center;
     margin-left: 5%;
     margin-bottom: 2%;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     color: #95060a;
 }
 
@@ -220,7 +225,7 @@ select{
     margin-left: 35%;
     margin-top: 2%;
     font-size: 0.75em;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #colorSearchResult{
@@ -235,7 +240,7 @@ select{
     margin-left: 5%;
     margin-top: 2%;
     margin-bottom: 1%;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     color: #95060a;
 }
 

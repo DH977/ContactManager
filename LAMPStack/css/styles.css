@@ -12,6 +12,10 @@ body
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     color: #e6edf3;
+<<<<<<< Updated upstream
+=======
+    margin-bottom: 55;
+>>>>>>> Stashed changes
 }
 
 #loginDiv
@@ -21,6 +25,13 @@ body
     margin-left: 15%;
     padding: 25px;
     background-color: #161b22;
+<<<<<<< Updated upstream
+=======
+  
+    /*may not be needed*/
+    border-radius: 10px;
+	  margin: 0 auto;
+>>>>>>> Stashed changes
 }
 
 #loggedInDiv
@@ -30,6 +41,10 @@ body
     margin-left: 15%;
     padding: 25px;
     background-color: #161b22;
+<<<<<<< Updated upstream
+=======
+    margin: 0 auto;
+>>>>>>> Stashed changes
 }
 
 #accessUIDiv
@@ -39,15 +54,23 @@ body
     margin-left: 15%;
     padding: 25px;
     background-color: #161b22;
+<<<<<<< Updated upstream
+=======
+    margin: 0 auto;
+>>>>>>> Stashed changes
 }
 
 .buttons
 {
+<<<<<<< Updated upstream
     background-color: #0d1117;
+=======
+>>>>>>> Stashed changes
 	font-size: 30px;
     border-radius: 25px;
     width: 50%;
     margin-left: 25%;
+<<<<<<< Updated upstream
     margin-top: 2%;
     font-family: 'Arial', sans-serif;
 	color: #E6EDF3;
@@ -72,21 +95,123 @@ body
 
 .buttons:hover{
     background-color: #3366FF;
+=======
+    font-family: 'Arial', sans-serif;
+	  color: #E6EDF3;
+	  border: 1px solid #161b22
+	  margin-bottom: 25%;
+}
+
+.buttons:hover{
+    background-color: #0d1117;
+>>>>>>> Stashed changes
     color: #FFFFFF;
 	
     opacity: 50%;
 	outline-color: #3366FF;
 }
 
+<<<<<<< Updated upstream
+=======
+/*  
+  font-family: 'Arial', sans-serif;
+	color: #E6EDF3;
+	border: 1px solid #161b22
+
+ lost code, no idea where it goes
+*/
+																																																																																								}
+
+.registerButton 
+{
+	background-color: #171B21;
+    font-size: 20px;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2%;
+    font-family: 'Arial', sans-serif;
+    color: #3366FF;
+    border: 1px solid #161b22;
+}
+
+.registerButton:hover{
+	text-decoration: underline;
+}
+
+.buttons:hover{
+    background-color: #3366FF;
+    color: #FFFFFF;
+	
+    opacity: 50%;
+	outline-color: #3366FF;
+}
+.saveButtons
+{
+    background-color: #238636;
+	font-size: 30px;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 25%;
+    font-family: 'Arial', sans-serif;
+	color: #E6EDF3;
+	border: 1px solid #161b22;
+	margin-bottom: 10
+}
+
+.cancelButtons
+{
+    background-color: #0d1117;
+	font-size: 30px;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 25%;
+    font-family: 'Arial', sans-serif;
+	color: #E6EDF3;
+	border: 1px solid #5a5a5a;
+}
+
+
+
+.saveButtons:hover{
+    color: #FFFFFF;
+	
+    opacity: 50%;
+	outline-color: #3366FF;
+}
+
+.saveButtons:active { 
+    transform: scale(0.98); 
+    /* Scaling button to 0.98 to its original size */ 
+     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+     /* Lowering the shadow */ 
+} 
+
+.cancelButtons:hover{
+    color: #FFFFFF;
+	
+    opacity: 50%;
+	outline-color: #3366FF;
+}
+
+.cancelButtons:active { 
+    transform: scale(0.98); 
+    /* Scaling button to 0.98 to its original size */ 
+     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+     /* Lowering the shadow */ 
+} 
+>>>>>>> Stashed changes
 #loginName
 {
 	font-size: 30px;
 	background-color: #0d1117;
 }
+
 #loginPassword
 {
 	font-size: 30px;
 	background-color: #0d1117;
+<<<<<<< Updated upstream
 }
 #firstName
 {
@@ -97,11 +222,27 @@ body
 {
     font-size: 30px;
     background-color: #0d1117;
+=======
+>>>>>>> Stashed changes
 }
+
+#firstName
+{
+    font-size: 30px;
+    background-color: #0d1117;
+}
+
+#lastName
+{
+    font-size: 30px;
+    background-color: #0d1117;
+}
+
 #searchText
 {
 	font-size: 30px;
 }
+
 #colorText
 {
 	font-size: 30px;
@@ -182,4 +323,8 @@ input[type="password"]:focus {
     border: 1px solid #3366FF; /* Change the border color to your preferred glow color */
     box-shadow: 0 0 1px 1px #3366FF; /* Add a box shadow for the glowing effect */
     outline: none; /* Remove the default focus outline */
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes

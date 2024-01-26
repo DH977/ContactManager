@@ -5,15 +5,14 @@ body
 
 #title 
 {
+    text-align: center;
     font-size: 40px;
     width: 100%;
-    margin: 2% 5%;
+    margin: 0 auto;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     color: #e6edf3;
-	margin: 0 auto;
-	margin-bottom: 55;
-
+    margin-bottom: 55;
 }
 
 #loginDiv
@@ -23,8 +22,10 @@ body
     margin-left: 15%;
     padding: 25px;
     background-color: #161b22;
-	border-radius: 10px;
-	margin: 0 auto;
+  
+    /*may not be needed*/
+    border-radius: 10px;
+	  margin: 0 auto;
 }
 
 #loggedInDiv
@@ -34,7 +35,7 @@ body
     margin-left: 15%;
     padding: 25px;
     background-color: #161b22;
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 #accessUIDiv
@@ -44,24 +45,57 @@ body
     margin-left: 15%;
     padding: 25px;
     background-color: #161b22;
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 .buttons
 {
-    background-color: #238636;
 	font-size: 30px;
     border-radius: 25px;
     width: 50%;
     margin-left: 25%;
     font-family: 'Arial', sans-serif;
-	color: #E6EDF3;
-	border: 1px solid #161b22
-	margin-bottom: 25%;
+	  color: #E6EDF3;
+	  border: 1px solid #161b22
+	  margin-bottom: 25%;
 }
 
 .buttons:hover{
     background-color: #0d1117;
+    color: #FFFFFF;
+	
+    opacity: 50%;
+	outline-color: #3366FF;
+}
+
+/*  
+  font-family: 'Arial', sans-serif;
+	color: #E6EDF3;
+	border: 1px solid #161b22
+
+ lost code, no idea where it goes
+*/
+																																																																																								}
+
+.registerButton 
+{
+	background-color: #171B21;
+    font-size: 20px;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2%;
+    font-family: 'Arial', sans-serif;
+    color: #3366FF;
+    border: 1px solid #161b22;
+}
+
+.registerButton:hover{
+	text-decoration: underline;
+}
+
+.buttons:hover{
+    background-color: #3366FF;
     color: #FFFFFF;
 	
     opacity: 50%;
@@ -73,15 +107,30 @@ body
 	font-size: 30px;
 	background-color: #0d1117;
 }
+
 #loginPassword
 {
 	font-size: 30px;
 	background-color: #0d1117;
 }
+
+#firstName
+{
+    font-size: 30px;
+    background-color: #0d1117;
+}
+
+#lastName
+{
+    font-size: 30px;
+    background-color: #0d1117;
+}
+
 #searchText
 {
 	font-size: 30px;
 }
+
 #colorText
 {
 	font-size: 30px;
@@ -112,13 +161,13 @@ input[type="text"],input[type="password"]{
 
 #loginResult{
     display: inline-block;
-    font-size: 0.8em;
+    font-size: 0.55em;
     width: 90%;
     text-align: center;
     margin-left: 5%;
     margin-bottom: 2%;
-    font-family: 'Ubuntu', sans-serif;
-    color: #95060a;
+    font-family: 'Ubuntu', arial;
+    color: #cc0000;
 }
 
 #userName{

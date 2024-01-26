@@ -10,7 +10,7 @@ body
     margin: 2% 5%;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
-    color: #FFFFFF;
+    color: #e6edf3;
 }
 
 #loginDiv
@@ -19,7 +19,7 @@ body
     width: 70%;
     margin-left: 15%;
     padding: 25px;
-    background-color: #b2b2b2;
+    background-color: #161b22;
 }
 
 #loggedInDiv
@@ -28,7 +28,7 @@ body
     width: 70%;
     margin-left: 15%;
     padding: 25px;
-    background-color: #b2b2b2;
+    background-color: #161b22;
 }
 
 #accessUIDiv
@@ -37,35 +37,54 @@ body
     width: 70%;
     margin-left: 15%;
     padding: 25px;
-    background-color: #b2b2b2;
+    background-color: #161b22;
 }
 
 .buttons
 {
-    background-color: #171B21;
+    background-color: #0d1117;
 	font-size: 30px;
     border-radius: 25px;
     width: 50%;
     margin-left: 25%;
     font-family: 'Arial', sans-serif;
-	color: E6EDF3
+	color: #E6EDF3;
+	border: 1px solid #161b22
+																																																																																								}
+
+.registerButton 
+{
+	background-color: #171B21;
+    font-size: 20px;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 25%;
+    font-family: 'Arial', sans-serif;
+    color: #3366FF;
+    border: 1px solid #161b22;
+}
+
+.registerButton:hover{
+	text-decoration: underline;
 }
 
 .buttons:hover{
-    background-color: #171B21;
+    background-color: #3366FF;
     color: #FFFFFF;
 	
     opacity: 50%;
-	outline-color: 3366FF;
+	outline-color: #3366FF;
 }
 
 #loginName
 {
 	font-size: 30px;
+	background-color: #0d1117;
 }
 #loginPassword
 {
 	font-size: 30px;
+	background-color: #0d1117;
 }
 #searchText
 {
@@ -83,6 +102,9 @@ input[type="text"],input[type="password"]{
     margin-left: 10%;
     margin-bottom: 2%;
     font-family: 'Ubuntu', sans-serif;
+	border: 1px solid transparent;
+    outline: none;
+	color: #E6EDF3
 }
 
 #inner-title{
@@ -93,18 +115,18 @@ input[type="text"],input[type="password"]{
     margin-left: 5%;
     margin-bottom: 2%;
     font-family: 'Ubuntu', sans-serif;
-    color: #95060a;
+    color: #e6edf3;
 }
 
 #loginResult{
     display: inline-block;
-    font-size: 0.8em;
+    font-size: 0.55em;
     width: 90%;
     text-align: center;
     margin-left: 5%;
     margin-bottom: 2%;
-    font-family: 'Ubuntu', sans-serif;
-    color: #95060a;
+    font-family: 'Ubuntu', arial;
+    color: #cc0000;
 }
 
 #userName{
@@ -141,4 +163,11 @@ select{
     margin-bottom: 1%;
     font-family: 'Ubuntu', sans-serif;
     color: #95060a;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border: 1px solid #3366FF; /* Change the border color to your preferred glow color */
+    box-shadow: 0 0 1px 1px #3366FF; /* Add a box shadow for the glowing effect */
+    outline: none; /* Remove the default focus outline */
 }

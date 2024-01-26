@@ -101,7 +101,60 @@ body
     opacity: 50%;
 	outline-color: #3366FF;
 }
+.saveButtons
+{
+    background-color: #238636;
+	font-size: 30px;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 25%;
+    font-family: 'Arial', sans-serif;
+	color: #E6EDF3;
+	border: 1px solid #161b22;
+	margin-bottom: 10
+}
 
+.cancelButtons
+{
+    background-color: #0d1117;
+	font-size: 30px;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 25%;
+    font-family: 'Arial', sans-serif;
+	color: #E6EDF3;
+	border: 1px solid #5a5a5a;
+}
+
+
+
+.saveButtons:hover{
+    color: #FFFFFF;
+	
+    opacity: 50%;
+	outline-color: #3366FF;
+}
+
+.saveButtons:active { 
+    transform: scale(0.98); 
+    /* Scaling button to 0.98 to its original size */ 
+     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+     /* Lowering the shadow */ 
+} 
+
+.cancelButtons:hover{
+    color: #FFFFFF;
+	
+    opacity: 50%;
+	outline-color: #3366FF;
+}
+
+.cancelButtons:active { 
+    transform: scale(0.98); 
+    /* Scaling button to 0.98 to its original size */ 
+     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+     /* Lowering the shadow */ 
+} 
 #loginName
 {
 	font-size: 30px;

@@ -126,6 +126,18 @@ body
     background-color: #0d1117;
 }
 
+#phoneNumber
+{
+    font-size: 30px;
+    background-color: #0d1117;
+}
+
+#email
+{
+    font-size: 30px;
+    background-color: #0d1117;
+}
+
 #searchText
 {
 	font-size: 30px;

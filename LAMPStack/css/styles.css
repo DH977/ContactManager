@@ -167,17 +167,17 @@ body
 	font-size: 30px;
 }
 
-input[type="text"],input[type="password"]{
+#inputSearchPage[type="text"],input[type="password"]{
     border-radius: 25px;
     text-align: center;
     width: 90%;
-	margin: auto;
+    margin: auto;
     font-family: 'Arial', sans-serif;
-	border: 1px solid #3366FF
-	box-shadow: 0 0 1px 1px #3366FF;
+    border: 1px solid #3366FF;
+    box-shadow: 0 0 1px 1px #3366FF;
     outline: #171B21;
-	color: #E6EDF3;
-	background-color: 171B21
+    color: #E6EDF3;
+    background-color: 171B21
 	
 }
 

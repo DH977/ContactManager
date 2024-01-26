@@ -171,6 +171,18 @@ body
 	font-size: 30px;
 }
 
+input[type="text"],input[type="password"]{
+    border-radius: 25px;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    font-family: 'Ubuntu', sans-serif;
+    border: 1px solid transparent;
+    outline: none;
+    color: #E6EDF3
+}
+
 #inputSearchPage[type="text"],input[type="password"]{
     border-radius: 25px;
     text-align: center;

@@ -1,5 +1,7 @@
-const urlBase = 'https://dh977.github.io/ContactManager/LAMPStack/LAMPAPI';
+const urlBase = 'http://group3cop4331.xyz/LAMPAPI';
 const extension = 'php';
+
+
 
 let userId = 0;
 let firstName = "";
@@ -14,8 +16,6 @@ function doLogin()
 	let login = document.getElementById("loginName").value;
 	let password = document.getElementById("loginPassword").value;
 //	var hash = md5( password );
-	console.log(login);
-    	console.log(password);
 	
 	document.getElementById("loginResult").innerHTML = "";
 
@@ -24,7 +24,6 @@ function doLogin()
 	let jsonPayload = JSON.stringify( tmp );
 	
 	let url = urlBase + '/Login.' + extension;
-	console.log(url);
 
 	let xhr = new XMLHttpRequest();
 	xhr.open("POST", url, true);
@@ -98,7 +97,7 @@ function readCookie()
 	}
 	else
 	{
-		//document.getElementById("userName").innerHTML = "Logged in as " + firstName + " " + lastName;
+		document.getElementById("userName").innerHTML = "Logged in as " + firstName + " " + lastName;
 	}
 }
 
@@ -119,7 +118,7 @@ function addColor()
 	let tmp = {color:newColor,userId,userId};
 	let jsonPayload = JSON.stringify( tmp );
 
-	let url = urlBase + '/AddColor.' + extension;
+	let url = urlBase + '/AddContacts.' + extension;
 	
 	let xhr = new XMLHttpRequest();
 	xhr.open("POST", url, true);
@@ -152,7 +151,7 @@ function searchColor()
 	let tmp = {search:srch,userId:userId};
 	let jsonPayload = JSON.stringify( tmp );
 
-	let url = urlBase + '/SearchColors.' + extension;
+	let url = urlBase + '/SearchContactsTest.' + extension;
 	
 	let xhr = new XMLHttpRequest();
 	xhr.open("POST", url, true);
@@ -169,9 +168,12 @@ function searchColor()
 				for( let i=0; i<jsonObject.results.length; i++ )
 				{
 					colorList += jsonObject.results[i].firstName;
+					//console.log(jsonObject.results[i].firstName;
+					//colorList += jsonObject.results[i];
 					if( i < jsonObject.results.length - 1 )
 					{
 						colorList += "<br />\r\n";
+						
 					}
 				}
 				

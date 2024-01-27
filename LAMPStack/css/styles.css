@@ -5,12 +5,15 @@ body
 
 #title 
 {
+    text-align: center;
     font-size: 40px;
     width: 100%;
     margin: auto;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     color: #e6edf3;
+    margin-bottom: 55;
+
 }
 
 #loginDiv
@@ -19,30 +22,32 @@ body
     width: 70%;
     margin-left: 15%;
     padding: 25px;
-    background-color: #161b22
-	margin: auto;
-	color: white;
-	
-	
+    background-color: #161b22;
+    border-radius: 10px;
+	  margin: 0 auto;
+
 }
 
 #loggedInDiv
 {
   font-size: 30px;
     width: 70%;
-    margin: auto;
+    margin-left: 15%;
     padding: 25px;
     background-color: #161b22;
-	color: white;
+    margin: 0 auto;
+
 }
 
 #accessUIDiv
 {
     font-size: 30px;
     width: 70%;
-    margin: auto;
+    margin-left: 15%;
     padding: 25px;
     background-color: #161b22;
+    margin: 0 auto;
+
 }
 #accessUIDivSearchPage
 {
@@ -57,14 +62,11 @@ body
 {
 	font-size: 30px;
     border-radius: 25px;
-    width: 11%;
+  width: 11%;
 	height: 6.7%;
-    font-family: 'Arial', sans-serif;
-	//grid-row: 1;
-	//grid-column: 1;
+  font-family: 'Arial', sans-serif;
 	margin-left: 100%;
 	margin-top: -46;
-	//margin: auto;
 	background-color:#238636;
 	
 	
@@ -76,8 +78,22 @@ body
 
 .searchButtonSearchPage:hover{
     background-color: #00d5124f;
+    width: 50%;
+    margin-left: 25%;
+    font-family: 'Arial', sans-serif;
+    color: #E6EDF3;
+    border: 1px solid #161b22
+    margin-bottom: 25%;
+    background-color: #0d1117;
+}
+
+.buttons:hover{
+    background-color: #3366FF;
     color: #FFFFFF;
     opacity: 50%;
+	  outline-color: #3366FF;
+    
+
 	
 }
 
@@ -122,14 +138,60 @@ body
 
 #box
 {
-	//grid-row: 1;
 	width:110%;
-	//grid-column: 1;
-	
-	
-	
-
+	outline-color: #3366FF;
 }
+
+.registerButton 
+{
+	background-color: #171B21;
+    font-size: 20px;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2%;
+    font-family: 'Arial', sans-serif;
+    color: #3366FF;
+    border: 1px solid #161b22;
+}
+
+.registerButton:hover{
+	text-decoration: underline;
+}
+
+
+.saveButtons
+{
+    background-color: #238636;
+	font-size: 30px;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 25%;
+    font-family: 'Arial', sans-serif;
+	color: #E6EDF3;
+	border: 1px solid #161b22;
+	margin-bottom: 10
+}
+
+.cancelButtons
+{
+    background-color: #0d1117;
+	font-size: 30px;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 25%;
+    font-family: 'Arial', sans-serif;
+	color: #E6EDF3;
+	border: 1px solid #5a5a5a;
+}
+
+.saveButtons:hover{
+    color: #FFFFFF;
+	
+    opacity: 50%;
+	outline-color: #3366FF;
+}
+
 
 .buttons
 {
@@ -141,31 +203,76 @@ body
     font-family: 'Arial', sans-serif;
 	color: #E6EDF3;
 	border: 1px solid #161b22
-																																																																																								}
+}
+																																																																																								
 
-.buttons:hover{
-    background-color: #3366FF;
-    color: #FFFFFF;
-	
-    opacity: 50%;
+.saveButtons:active { 
+    transform: scale(0.98); 
+    /* Scaling button to 0.98 to its original size */ 
+     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+     /* Lowering the shadow */ 
+} 
+
+.cancelButtons:hover{
+
+  color: #FFFFFF;
+  opacity: 50%;
 	outline-color: #3366FF;
 }
+
+
+.cancelButtons:active { 
+    transform: scale(0.98); 
+    /* Scaling button to 0.98 to its original size */ 
+     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+     /* Lowering the shadow */ 
+} 
 
 #loginName
 {
 	font-size: 30px;
 	background-color: #0d1117;
 }
+
 #loginPassword
 {
 	font-size: 30px;
 	background-color: #0d1117;
+
+}
+
+
+}
+
+#firstName
+{
+    font-size: 30px;
+    background-color: #0d1117;
+}
+
+#lastName
+{
+    font-size: 30px;
+    background-color: #0d1117;
+}
+
+#email
+{
+    font-size: 30px;
+    background-color: #0d1117;
+}
+
+#phoneNumber
+{
+    font-size: 30px;
+    background-color: #0d1117;
 }
 
 #searchText
 {
 	font-size: 30px;
 }
+
 #colorText
 {
 	font-size: 30px;
@@ -178,6 +285,7 @@ input[type="text"],input[type="password"]{
     margin-left: 10%;
     margin-bottom: 2%;
     font-family: 'Ubuntu', sans-serif;
+
     border: 1px solid transparent;
     outline: none;
     color: #E6EDF3
@@ -196,6 +304,9 @@ input[type="text"],input[type="password"]{
     outline: #171B21;
     color: #E6EDF3;
     background-color: 171B21
+	border: 1px solid transparent;
+    outline: none;
+	color: #E6EDF3
 }
 
 #inner-title{
@@ -211,13 +322,13 @@ input[type="text"],input[type="password"]{
 
 #loginResult{
     display: inline-block;
-    font-size: 0.8em;
+    font-size: 0.55em;
     width: 90%;
     text-align: center;
     margin-left: 5%;
     margin-bottom: 2%;
-    font-family: 'Ubuntu', sans-serif;
-    color: #95060a;
+    font-family: 'Ubuntu', arial;
+    color: #cc0000;
 }
 
 #userName{
@@ -254,5 +365,14 @@ select{
     margin-bottom: 1%;
     font-family: 'Ubuntu', sans-serif;
     color: #95060a;
+}
+
+
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border: 1px solid #3366FF; /* Change the border color to your preferred glow color */
+    box-shadow: 0 0 1px 1px #3366FF; /* Add a box shadow for the glowing effect */
+    outline: none; /* Remove the default focus outline */
 }
 

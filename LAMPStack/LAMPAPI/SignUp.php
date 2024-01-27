@@ -1,11 +1,12 @@
 <?php
 	$inData = getRequestInfo();
 	
-	$UserId = $inData["UserId"];
+	// everything to be input
+	// $userId = $inData["userId"];
 	$firstName = $inData["firstName"];
 	$lastName = $inData["lastName"];
-	$Phone = $inData["Phone"];
-	$Email = $inData["Email"];
+	$Login = $inData["Login"];
+	$Password = $inData["Password"];
 
 	$conn = new mysqli("localhost", "TheBeast", "WeLoveCOP4331", "COP4331");
 	if ($conn->connect_error) 
@@ -14,12 +15,14 @@
 	} 
 	else
 	{
-		$stmt = $conn->prepare("INSERT into Contacts (UserId, firstName, lastName, Phone, Email) VALUES(?,?,?,?,?)");
-		$stmt->bind_param("sssss", $UserId, $firstName, $lastName, $Phone, $Email);
+		// changed lines here
+		$stmt = $conn->prepare("INSERT into Users (firstName, lastName, Login, Password) 
+			VALUES(?,?,?,?)");
+		$stmt->bind_param("ssss", $firstName, $lastName, $Login, $Password);
 		$stmt->execute();
 		$stmt->close();
 		$conn->close();
-		echo "New record created successfully";
+		echo "New record created successfully\n";
 		returnWithError("");
 	}
 

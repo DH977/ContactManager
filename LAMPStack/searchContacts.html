@@ -1,21 +1,49 @@
-<html>
-<head>
-	<title>COP 4331 LAMP Stack Demo</title>
-	<script type="text/javascript" src="js/md5.js"></script>
-	<script type="text/javascript" src="js/code.js"></script>
-    <link href="css/styles.css" rel="stylesheet">	
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-</head>
+<link href="chrome-extension://cjdnfmjmdligcpfcekfmenlhiopehjkd/web_resources/modal/modal.css" rel="stylesheet" id="__tmpStyle"><script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></head>
 <body>
 
-<h1 id="title">COP 4331 LAMP Stack Demo</h1>
+<h1 id="title">Contact Manager</h1>
 
-<div class="dropdown">
-  <span>Mouse over me</span>
-  <div class="dropdown-content">
-    <p>Hello World!</p>
-  </div>
+<div id="loggedInDiv">
+	<span id="userName">Logged in as Rick Leinecker</span><br>
+	<button type="button" id="logoutButton" class="buttons" onclick="doLogout();"> Log Out </button>
 </div>
 
-</body>
-</html>
+<div id="accessUIDivSearchPage">
+	<br>
+<div id="box">
+    
+     
+            
+<input id="inputSearchPage" placeholder="Search" class="search" type="text" oninput="searchColor();">
+    
+
+
+   
+</div>
+	
+<button type="button" id="searchColorButton" class="searchButtonSearchPage" onclick="searchColor();">  <a href="#"><i class="material-icons"> search</i>
+</a> </button>
+	
+
+<br>
+	<span id="colorSearchResult"></span>
+	<p id="colorListSearchPage">
+	</p><br><br>
+
+	<input type="text" id="colorText" placeholder="Color To Add">
+	<button type="button" id="addColorButton" class="buttons" onclick="addColor();"> Add Color </button><br>
+	<span id="colorAddResult"></span>
+</div>
+
+
+
+<div>
+    <div id="twoseven-ext-tab-media-modal" class="twoseven-ext-tab-media-modal" style="display: none;">
+      <!-- Modal content -->
+      <div class="twoseven-ext-tab-media-modal-content">
+        <div class="iframe-container" style="height: 100%; width: 100%;">
+          <span class="close">×</span>
+        </div>
+      </div>
+    </div></div><div id="hl-aria-live-message-container" aria-live="polite" class="visually-hidden"></div><div id="hl-aria-live-alert-container" role="alert" aria-live="assertive" class="visually-hidden"></div></body></html>

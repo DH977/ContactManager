@@ -50,14 +50,15 @@ body
 
 .buttons
 {
-	font-size: 30px;
+    font-size: 30px;
     border-radius: 25px;
     width: 50%;
     margin-left: 25%;
     font-family: 'Arial', sans-serif;
-	  color: #E6EDF3;
-	  border: 1px solid #161b22
-	  margin-bottom: 25%;
+    color: #E6EDF3;
+    border: 1px solid #161b22
+    margin-bottom: 25%;
+    background-color: #0d1117;
 }
 
 .buttons:hover{
@@ -67,15 +68,6 @@ body
     opacity: 50%;
 	outline-color: #3366FF;
 }
-
-/*  
-  font-family: 'Arial', sans-serif;
-	color: #E6EDF3;
-	border: 1px solid #161b22
-
- lost code, no idea where it goes
-*/
-																																																																																								}
 
 .registerButton 
 {
@@ -174,6 +166,18 @@ body
 }
 
 #lastName
+{
+    font-size: 30px;
+    background-color: #0d1117;
+}
+
+#email
+{
+    font-size: 30px;
+    background-color: #0d1117;
+}
+
+#phoneNumber
 {
     font-size: 30px;
     background-color: #0d1117;

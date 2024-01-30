@@ -33,17 +33,16 @@
 	<span id="colorSearchResult"></span>
 	<p id="colorListSearchPage">
 	</p><br><br>
+	
 	<script>
 
   	var paragraph = document.getElementById('colorListSearchPage');
 
-  	paragraphs.forEach(function(paragraph) {
-   	 var button = document.createElement('button');
-    	button.className = 'paragraph-button';
-   	 button.textContent = 'Click me';
-
-    
-    	paragraph.parentNode.insertBefore(button, paragraph.nextSibling);
+  
+   	 var button = document.createElement('paragraph');
+         button.className = 'paragraph-button';
+   	 button.textContent = 'Click';
+	 paragraph.parentNode.insertBefore(button, paragraph.nextSibling);
  	 });
 	</script>
 	

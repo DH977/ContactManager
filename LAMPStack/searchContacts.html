@@ -10,7 +10,7 @@
 <h1 id="title">Contact Manager</h1>
 
 <div id="loggedInDiv">
-	<span id="userName">Logged in as Rick Leinecker</span><br>
+	<span id="userName"></span><br>
 	<button type="button" id="logoutButton" class="buttons" onclick="doLogout();"> Log Out </button>
 </div>
 
@@ -29,11 +29,24 @@
 	
 	
 
-<br>
+	<br>
 	<span id="colorSearchResult"></span>
 	<p id="colorListSearchPage">
 	</p><br><br>
+	<script>
 
+  	var paragraph = document.getElementById('colorListSearchPage');
+
+  	paragraphs.forEach(function(paragraph) {
+   	 var button = document.createElement('button');
+    	button.className = 'paragraph-button';
+   	 button.textContent = 'Click me';
+
+    
+    	paragraph.parentNode.insertBefore(button, paragraph.nextSibling);
+ 	 });
+	</script>
+	
 	<input type="text" id="colorText" placeholder="Color To Add">
 	<button type="button" id="addColorButton" class="buttons" onclick="addColor();"> Add Color </button><br>
 	<span id="colorAddResult"></span>

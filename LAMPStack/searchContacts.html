@@ -35,16 +35,26 @@
 	</p><br><br>
 	
 	<script>
-
+  	//Another attempt but iterating over each paragraph element.
   	var paragraph = document.getElementById('colorListSearchPage');
 
-  
-   	 var button = document.createElement('paragraph');
-         button.className = 'paragraph-button';
-   	 button.textContent = 'Click';
-	 paragraph.parentNode.insertBefore(button, paragraph.nextSibling);
- 	 
-	</script>
+  	var names = paragraph.innerHTML.split('<br>');
+  	paragraph.innerHTML = '';
+
+  	names.forEach(function(name) {
+    	name = name.trim();
+    	
+      	// Custom button filler
+      	var button = document.createElement('button');
+      	button.className = 'paragraph-button';
+      	button.textContent = 'Click me';
+
+      	paragraph.appendChild(document.createTextNode(name));
+      	paragraph.appendChild(button);
+      	paragraph.appendChild(document.createElement('br')); // Add line break for formatting
+    	
+        });
+        </script>
 	
 	<input type="text" id="colorText" placeholder="Color To Add">
 	<button type="button" id="addColorButton" class="buttons" onclick="addColor();"> Add Color </button><br>

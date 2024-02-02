@@ -45,7 +45,7 @@
     				"ID" : "'. $row["ID"] .'"}';
 		}
 		
-		if( $searchCount == 0 )
+		if( $searchCount == 0 && !(empty($inData["userId"])))
 		{
 			returnWithError( "No Records Found" );
 		}

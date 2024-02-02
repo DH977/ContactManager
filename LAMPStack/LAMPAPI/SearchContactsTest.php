@@ -9,6 +9,7 @@
 	if (empty($inData["userId"]))
 	{
 		returnWithError("Incorrect JSON Format: Missing userId field");
+		return;
 	}
 
 	$conn = new mysqli("localhost", "TheBeast", "WeLoveCOP4331", "COP4331");
@@ -45,7 +46,7 @@
     				"ID" : "'. $row["ID"] .'"}';
 		}
 		
-		if( $searchCount == 0 && !(empty($inData["userId"])))
+		if( $searchCount == 0)
 		{
 			returnWithError( "No Records Found" );
 		}

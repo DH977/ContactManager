@@ -6,7 +6,7 @@
 	$searchResults = "";
 	$searchCount = 0;
 
-	if (empty($inData["search"]))
+	if (empty($inData["userId"]))
 	{
 		returnWithError("Incorrect JSON Format");
 	}

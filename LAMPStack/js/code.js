@@ -48,7 +48,7 @@ function doLogin()
 
 				saveCookie();
 	
-				window.location.href = "color.html";
+				window.location.href = "searchContacts.html";
 			}
 		};
 		xhr.send(jsonPayload);
@@ -93,7 +93,7 @@ function readCookie()
 	
 	if( userId < 0 )
 	{
-		window.location.href = "index.html";
+		window.location.href = "login.html";
 	}
 	else
 	{
@@ -151,7 +151,7 @@ function searchColor()
 	let tmp = {search:srch,userId:userId};
 	let jsonPayload = JSON.stringify( tmp );
 
-	let url = urlBase + '/SearchContactsTest.' + extension;
+	let url = urlBase + '/SearchContacts.' + extension;
 	
 	let xhr = new XMLHttpRequest();
 	xhr.open("POST", url, true);
@@ -164,12 +164,21 @@ function searchColor()
 			{
 				document.getElementById("colorSearchResult").innerHTML = "Color(s) has been retrieved";
 				let jsonObject = JSON.parse( xhr.responseText );
-				
+				console.log(jsonObject);
+				console.log("hi");
 				for( let i=0; i<jsonObject.results.length; i++ )
 				{
-					colorList += jsonObject.results[i].firstName;
+					//colorList += jsonObject.results[i].firstName;
 					//console.log(jsonObject.results[i].firstName;
-					//colorList += jsonObject.results[i];
+					let link = "http://group3cop4331.xyz/contacts.html";
+					let atag = document.createElement("a");
+					atag.setAttribute("href", link);
+					atag.innerHTML = "First name: "+jsonObject.results[i].firstName + "<br />\r\n"+"Last name: "+jsonObject.results[i].lastName+"<br />\r\n"+"Phone: "+jsonObject.results[i].Phone+"<br />\r\n"+"Email: "+jsonObject.results[i].Email+"<br />\r\n";
+					atag.style.textDecoration = "none";
+					atag.style.color = "inherit";
+					atag.title = "Click here to add more contacts!"
+					//colorList += jsonObject.results[i].firstName;
+					colorList += atag.outerHTML;
 					if( i < jsonObject.results.length - 1 )
 					{
 						colorList += "<br />\r\n";
@@ -185,6 +194,41 @@ function searchColor()
 	catch(err)
 	{
 		document.getElementById("colorSearchResult").innerHTML = err.message;
+	}
+	
+}
+
+function signUp()
+{
+	let firstName = document.getElementById("firstName").value;
+	let lastName = document.getElementById("lastName").value;
+	let loginName = document.getElementById("loginName").value;
+	let loginPassword = document.getElementById("loginPassword").value;
+
+	//document.getElementById("colorAddResult").innerHTML = "";
+
+	let tmp = { firstName: firstName, lastName: lastName, Login: loginName, Password: loginPassword};
+	let jsonPayload = JSON.stringify( tmp );
+
+	let url = urlBase + '/SignUp.' + extension;
+	
+	let xhr = new XMLHttpRequest();
+	xhr.open("POST", url, true);
+	xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+	try
+	{
+		xhr.onreadystatechange = function() 
+		{
+			if (this.readyState == 4 && this.status == 200) 
+			{
+				//document.getElementById("colorAddResult").innerHTML = "Color has been added";
+			}
+		};
+		xhr.send(jsonPayload);
+	}
+	catch(err)
+	{
+		//document.getElementById("colorAddResult").innerHTML = err.message;
 	}
 	
 }

@@ -6,6 +6,11 @@
 	$searchResults = "";
 	$searchCount = 0;
 
+	if (empty($inData["search"]))
+	{
+		returnWithError("Incorrect JSON Format");
+	}
+
 	$conn = new mysqli("localhost", "TheBeast", "WeLoveCOP4331", "COP4331");
 	if ($conn->connect_error) 
 	{

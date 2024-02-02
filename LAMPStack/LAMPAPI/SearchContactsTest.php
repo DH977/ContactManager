@@ -8,7 +8,7 @@
 
 	if (empty($inData["userId"]))
 	{
-		returnWithError("Incorrect JSON Format");
+		returnWithError("Incorrect JSON Format: Missing userId field");
 	}
 
 	$conn = new mysqli("localhost", "TheBeast", "WeLoveCOP4331", "COP4331");

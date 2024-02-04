@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>Contact Manager</title>
+	<script type="text/javascript" src="js/md5.js"></script>
+	<script type="text/javascript" src="js/code.js"></script>
+    <link href="css/styles.css" rel="stylesheet">	
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body>
+
+<h1 id="title">Contacts</h1>
+
+<div id="loginDiv">
+	<span id="inner-title">Contacts Name Here</span>
+	<input type="text" id="firstName" placeholder="First Name" /><br />
+	<input type="text" id="lastName" placeholder="Last Name"/><br />
+	<input type="text" id="phoneNumber" placeholder="Phone Number"/><br />
+	<input type="text" id="email" placeholder="Email"/><br />
+	<button type="button" id="saveButton" class="saveButtons" onclick="addContact();"> Save </button>
+	<button type="button" id="cancelButton" class="cancelButtons" onclick="doCancel();"> Cancel </button>
+	<span id="loginResult"></span>
+</div>
+
+<script>
+
+	function doSave() {
+		//do API stuff for save function here
+		const firstName = document.getElementById('firstName').value;
+    	const lastName = document.getElementById('lastName').value;
+    	const phoneNumber = document.getElementById('phoneNumber').value;
+    	const email = document.getElementById('email').value;
+
+      // Prepare data as a JavaScript object
+    	const userData = {
+        	firstName: firstName,
+        	lastName: lastName,
+        	phoneNumber: phoneNumber,
+        	email: email
+      	};
+
+		fetch('http://group3cop4331.xyz/LAMPAPI/AddContacts.php', {
+        	method: 'POST',
+        	headers: {
+        	'Content-Type': 'application/json'
+        	},
+        	body: JSON.stringify(userData)
+      	})
+
+    	.then(response => response.json())
+    	.then(data => {
+        	// Handle the API response if needed
+        	console.log('API Response:', data);
+     	 })
+    	.catch(error => {
+        	console.error('Error:', error);
+    	});
+
+		window.location.href = 'http://group3cop4331.xyz/searchContacts.html';
+	}
+
+    function doCancel() {
+      window.location.href = 'http://group3cop4331.xyz/searchContacts.html';
+    }
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,526 @@
+body {
+    background-image: url('https://i.redd.it/z2lmr45qrmp61.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the background covers the whole page */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background image fixed in place while scrolling */
+    background-position: center; /* Centers the image on the page */
+
+}
+
+.skunk{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	bottom:200px;
+    width: 150px;
+    height: 150px;
+	
+}
+
+table{
+	margin: auto;
+	color: white;
+	border: 1px solid white;
+	border-collapse: collapse;
+    width: 100%;
+}
+
+.table-container {
+    max-height: 450px; /* Set the maximum height for the table container */
+    overflow-y: auto;  /* Enable vertical scrolling */
+}
+
+#title 
+{
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+	margin-top: 33px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: #6dbcb9;
+    margin-bottom: 55;
+}
+
+#loginDiv
+{
+    font-size: 30px;
+    width: 70%;
+    margin-left: 15%;
+    padding: 25px;
+    background: rgba(50,50,50,0.7);
+  
+    /*may not be needed*/
+    border-radius: 10px;
+	  margin: 0 auto;
+}
+
+#loggedInDiv
+{
+    font-size: 30px;
+    width: 70%;
+	padding: 25px;
+    background: rgba(50,50,50,0.7);
+    margin: auto;
+	margin-top: 33px;
+}
+
+#accessUIDiv
+{
+    font-size: 30px;
+    width: 70%;
+    padding: 25px;
+    background: rgba(50,50,50,0.7);
+    margin: 0 auto;
+}
+
+.error {
+        position: absolute;
+        margin-left: 25%;
+        color: red;
+    }
+
+.invalid {
+    border: 2px solid red;
+}
+
+.buttons
+{
+    font-size: 30px;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 25%;
+    font-family: 'Arial', sans-serif;
+    color: #6dbcb9;
+    border: 1px solid transparent;
+    background-color: #474476;
+}
+
+.buttons:hover{
+    color: #FFFFFF;
+	
+    opacity: 50%;
+	outline-color: #3366FF;
+}
+
+.registerButton 
+{
+	background-color: transparent;
+    font-size: 20px;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2%;
+    font-family: 'Arial', sans-serif;
+    color: #8cefb9;
+    border: 1px solid transparent;
+}
+
+.registerButton:hover{
+	text-decoration: underline;
+}
+
+.buttons:hover{
+    background-color: #3366FF;
+    color: #FFFFFF;
+	
+    opacity: 50%;
+	outline-color: #3366FF;
+}
+.saveButtons
+{
+    background-color: #474476;
+	font-size: 30px;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 25%;
+    font-family: 'Arial', sans-serif;
+	color: #6dbcb9;
+	border: 1px solid #161b22;
+	margin-bottom: 10
+}
+
+.addContact.buttons
+{
+    background-color: #474476;
+	font-size: 30px;
+    border-radius: 
+    width: 50%;
+    margin-left: 25%;
+    font-family: 'Arial', sans-serif;
+	color: #6dbcb9;
+	border: 1px solid #161b22;
+	margin-bottom: 10
+}
+
+.deleteButton
+{
+    background-color: #4f1446;
+	font-size: 30px;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 25%;
+	margin-bottom: 2.5%;
+    font-family: 'Arial', sans-serif;
+	color: #6dbcb9;
+	border: 1px solid #5a5a5a;
+}
+
+.cancelButtons
+{
+    background-color: #0d1117;
+	font-size: 30px;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 25%;
+    font-family: 'Arial', sans-serif;
+	color: #E6EDF3;
+	border: 1px solid #5a5a5a;
+}
+
+.saveButtons:hover{
+    color: #FFFFFF;
+	
+    opacity: 50%;
+	outline-color: #3366FF;
+}
+
+.saveButtons:active { 
+    transform: scale(0.98); 
+    /* Scaling button to 0.98 to its original size */ 
+     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+     /* Lowering the shadow */ 
+} 
+
+.deleteButton:hover{
+    color: #FFFFFF;
+	
+    opacity: 50%;
+	outline-color: #3366FF;
+}
+
+.deleteButton:active { 
+    transform: scale(0.98); 
+    /* Scaling button to 0.98 to its original size */ 
+     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+     /* Lowering the shadow */ 
+} 
+
+.cancelButtons:hover{
+    color: #FFFFFF;
+	
+    opacity: 50%;
+	outline-color: #3366FF;
+}
+
+.cancelButtons:active { 
+    transform: scale(0.98); 
+    /* Scaling button to 0.98 to its original size */ 
+     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+     /* Lowering the shadow */ 
+} 
+
+.addContactButtons:hover{
+    color: #FFFFFF;
+	
+    opacity: 50%;
+	outline-color: #3366FF;
+}
+
+.addContactButtons:active { 
+    transform: scale(0.98); 
+    /* Scaling button to 0.98 to its original size */ 
+     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+     /* Lowering the shadow */ 
+} 
+#loginName
+{
+	font-size: 30px;
+	background-color: #0d1117;
+}
+
+#loginPassword
+{
+	font-size: 30px;
+	background-color: #0d1117;
+}
+
+#firstName
+{
+    font-size: 30px;
+    background-color: #0d1117;
+}
+
+#lastName
+{
+    font-size: 30px;
+    background-color: #0d1117;
+}
+
+#email
+{
+    font-size: 30px;
+    background-color: #0d1117;
+}
+
+#phoneNumber
+{
+    font-size: 30px;
+    background-color: #0d1117;
+}
+
+#searchText
+{
+	font-size: 30px;
+}
+
+#colorText
+{
+	font-size: 30px;
+}
+
+input[type="text"],input[type="password"]{
+    border-radius: 25px;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    font-family: 'Ubuntu', sans-serif;
+	border: 1px solid transparent;
+    outline: none;
+	color: #E6EDF3
+}
+
+input#loginName::placeholder{
+	color: #6d85a5;
+}
+
+input#loginPassword::placeholder{
+	color: #6d85a5;
+}
+
+input#firstName::placeholder{
+	color: #6d85a5;
+}
+
+input#lastName::placeholder{
+	color: #6d85a5;
+}
+
+input#phoneNumber::placeholder{
+	color: #6d85a5;
+}
+
+input#email::placeholder{
+	color: #6d85a5;
+}
+
+input#inputSearchPage::placeholder{
+	color: #6d85a5;
+}
+
+#inner-title{
+    display: inline-block;
+    font-size: 0.8em;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    font-family: 'Ubuntu', sans-serif;
+    color: #6dbcb9;
+}
+
+#loginResult{
+    display: inline-block;
+    font-size: 0.55em;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    font-family: 'Ubuntu', arial;
+    color: #cc0000;
+}
+
+#userName{
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    color: #6dbcb9;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#logoutButton{
+    width: 15%;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+    margin-left: 40%;
+	background-color: #4f1446;
+	font-size: 30px;
+    font-family: 'Arial', sans-serif;
+	color: #6dbcb9;
+	border: 1px solid #161b22;
+}
+
+select{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 2%;
+    font-size: 0.75em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#colorSearchResult{
+    display: none;
+}
+
+#colorAddResult{
+    display: inline-block;
+    font-size: 0.8em;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-family: 'Ubuntu', sans-serif;
+    color: #95060a;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border: 1px solid #3366FF; /* Change the border color to your preferred glow color */
+    box-shadow: 0 0 1px 1px #3366FF; /* Add a box shadow for the glowing effect */
+    outline: none; /* Remove the default focus outline */
+}
+
+
+/*Search Page CSS*/
+#accessUIDivSearchPage
+{
+    font-size: 30px;
+    width: 70%;
+    margin: auto;
+    min-height: 500px;
+    max-height: 500px;
+    padding: 25px;
+    background: rgba(50,50,50,0.7);
+  
+}
+.searchButtonSearchPage
+{
+    font-size: 30px;
+    border-radius: 25px;
+    width: 11%;
+    height: 6.7%;
+    font-family: 'Arial', sans-serif;
+    margin-left: 100%;
+    margin-top: -46;
+    background-color:#238636;
+}
+
+.searchButtonSearchPage:hover{
+    background-color: #00d5124f;
+    color: #FFFFFF;
+    opacity: 50%;
+
+}
+
+
+.addButtonSearchPage
+{
+     font-size: 30px;
+    border-radius: 25px;
+    width: 6%;
+    position: relative;
+    font-family: 'Ubuntu', arial;
+    grid-row: 2;
+    margin-left: 90%;
+}
+
+.addButtonSearchPage:hover{
+    background-color: #00d5124f;
+    color: #FFFFFF;
+    opacity: 50%;
+}
+
+#colorListSearchPage
+{
+    background: rgba(50,50,50,0.7);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    grid-row: 2;
+    margin-top:-30;
+    width: 90%;
+    margin-left: 5%;
+    outline-color: 3366ff;
+    max-height:300px;
+    overflow: auto;
+    color: #E6EDF3
+}
+
+#colorListSearchPage a:hover{ 
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#box
+{
+    width:110%;
+	margin-top: -50px;
+}
+
+#inputSearchPage[type="text"]{
+	font-size: 30px;
+    border-radius: 25px;
+    text-align: center;
+    width: 80%;
+    height: 4%;
+    margin: auto;
+    margin-left: 4.5%;
+    font-family: 'Arial', sans-serif;
+    //border: 1px solid #3366FF;
+    //box-shadow: 0 0 1px 1px #3366FF;
+     outline: #171B21;
+	color: #E6EDF3;
+    background-color: #0d1117;
+}
+
+#inputSearchPage[type="text"]:hover
+{
+    border: 1px solid #3366FF; /* Change the border color to your preferred glow color */
+    box-shadow: 0 0 1px 1px #3366FF; /* Add a box shadow for the glowing effect */
+    
+}
+
+
+.table-cell {
+	border-bottom: 1px solid white;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	padding-left: 3px;
+	padding-right: 10px;
+    text-align: center; /* Center-align the content within each cell */
+}
+
+.buttonsSearchPage
+{
+    font-size: 30px;
+    border-radius: 25px;
+    width: 40%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+    margin-left: 30%;
+    font-family: 'Arial', sans-serif;
+    color: #6dbcb9;
+    border: 1px solid transparent;
+    background-color: #474476;
+}
+.buttonsSearchPage:hover{
+    color: #FFFFFF;
+    opacity: 50%;
+	outline-color: #3366FF;
+}
+
+

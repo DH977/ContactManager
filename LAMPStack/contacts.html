@@ -1,0 +1,154 @@
+<html>
+<head>
+	<title>Contact Manager</title>
+	<script type="text/javascript" src="js/md5.js"></script>
+	<script type="text/javascript" src="js/code.js"></script>
+    <link href="css/styles.css" rel="stylesheet">	
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body onload="loadContactDetails()">
+
+<h1 id="title">Contacts</h1>
+
+<div id="loginDiv">
+	<span id="inner-title">Contacts Name Here</span>
+	<input type="text" id="firstName" placeholder="First Name" /><br />
+	<input type="text" id="lastName" placeholder="Last Name"/><br />
+	<input type="text" id="phoneNumber" placeholder="Phone Number"/><br />
+	<input type="text" id="email" placeholder="Email"/><br />
+	<button type="button" id="saveButton" class="saveButtons" onclick="editContact();"> Save </button>
+	<button type="button" id="deleteButton" class="deleteButton" onclick="deleteContact();"> Delete </button>
+	<button type="button" id="cancelButton" class="cancelButtons" onclick="doCancel();"> Cancel </button>
+	<span id="loginResult"></span>
+</div>
+
+<script>
+
+	let contactId;
+
+	function loadContactDetails() {
+		// Retrieve parameters from the URL
+		const urlParams = new URLSearchParams(window.location.search);
+
+		// Get individual parameters
+		const firstName = urlParams.get('firstName');
+		const lastName = urlParams.get('lastName');
+		const phoneNumber = urlParams.get('phone');
+		const email = urlParams.get('email');
+		contactId = urlParams.get('contactId');
+
+		// Set the values of the textboxes
+		document.getElementById('firstName').value = firstName || '';
+		document.getElementById('lastName').value = lastName || '';
+		document.getElementById('phoneNumber').value = phoneNumber || '';
+		document.getElementById('email').value = email || '';
+	}
+
+	function editContact(){
+	
+		let firstName = document.getElementById("firstName").value;
+		let lastName = document.getElementById("lastName").value;
+		let phoneNumber = document.getElementById("phoneNumber").value;
+		let email = document.getElementById("email").value; 
+	
+		let tmp = { ID: contactId, firstName: firstName, lastName: lastName, Phone: phoneNumber, Email: email};
+		let jsonPayload = JSON.stringify( tmp );
+	
+		let url = urlBase + '/EditContacts.' + extension;
+	
+		let xhr = new XMLHttpRequest();
+		xhr.open("POST", url, true);
+		xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+	
+		try
+		{
+			
+			xhr.onreadystatechange = function() 
+			{
+				if (this.readyState == 4 && this.status == 200) 
+				{
+					//document.getElementById("colorAddResult").innerHTML = "Color has been added";
+				}
+			};
+			xhr.send(jsonPayload);
+		}
+		catch(err)
+		{
+			//document.getElementById("colorAddResult").innerHTML = err.message;
+		}
+	
+		window.location.href = 'http://group3cop4331.xyz/searchContacts.html';
+	}
+	
+	
+	function deleteContact()
+	{
+		let tmp = {ID: contactId}; //check API requirements?
+		let jsonPayload = JSON.stringify(tmp);
+	
+		let url = urlBase + '/DeleteContact.' + extension;
+	
+		let xhr = new XMLHttpRequest();
+		xhr.open("POST", url, true);
+		xhr.setRequestHeader("Content-type", "application/json; charset = UTF-8");
+		
+		try {
+			xhr.onreadystatechange = function() {
+				if(this.readyState == 4 && this.status == 200) {
+					console.log("deleted successfully");
+				}
+			};
+			xhr.send(jsonPayload);
+		}
+		
+		catch(err) {
+			console.error("Error: " + err.message);
+		}
+		window.location.href = 'http://group3cop4331.xyz/searchContacts.html';
+	}
+
+
+
+	function doSave() {
+		//do API stuff for save function here
+		const firstName = document.getElementById('firstName').value;
+    	const lastName = document.getElementById('lastName').value;
+    	const phoneNumber = document.getElementById('phoneNumber').value;
+    	const email = document.getElementById('email').value;
+
+      // Prepare data as a JavaScript object
+    	const userData = {
+        	firstName: firstName,
+        	lastName: lastName,
+        	phoneNumber: phoneNumber,
+        	email: email
+      	};
+
+		fetch('http://group3cop4331.xyz/LAMPAPI/AddContacts.php', {
+        	method: 'POST',
+        	headers: {
+        	'Content-Type': 'application/json'
+        	},
+        	body: JSON.stringify(userData)
+      	})
+
+    	.then(response => response.json())
+    	.then(data => {
+        	// Handle the API response if needed
+        	console.log('API Response:', data);
+     	 })
+    	.catch(error => {
+        	console.error('Error:', error);
+    	});
+
+		window.location.href = 'http://group3cop4331.xyz/searchContacts.html';
+	}
+
+    function doCancel() {
+      window.location.href = 'http://group3cop4331.xyz/searchContacts.html';
+    }
+</script>
+<img src = "images/Skunk.png" class = "skunk">
+</body>
+</html>
+

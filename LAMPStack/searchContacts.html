@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Manager</title>
+    <script type="text/javascript" src="js/md5.js"></script>
+    <script type="text/javascript" src="js/code.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body onload="searchPageLoad();">
+
+    <h1 id="title">Search</h1>
+
+    <div id="loggedInDiv">
+        <button type="button" id="addContact" class="buttonsSearchPage" onclick="newContact();">Add Contact</button>
+        <span id="userName">"Select a Contact to Edit or Delete"</span><br>
+    </div>
+
+    <div id="accessUIDivSearchPage">
+        <br>
+        <div id="box">
+            <input id="inputSearchPage" placeholder="Search" class="search" type="text" oninput="searchContact();">
+        </div>
+        <br>
+        
+    <div class="table-container">
+        <table>
+            <thead id="table">
+
+            </thead>
+
+            <tbody id="tableB">
+
+            </tbody>
+        </table>
+    </div>
+
+        <br><br>
+        <button type="button" id="logoutButton" class="buttons" onclick="doLogout();">Log Out</button>
+
+        <script>
+            function newContact() {
+                window.location.href = 'http://group3cop4331.xyz/add-contact.html';
+            }
+        </script>
+
+    </div>
+    <img src = "images/Skunk.png" class = "skunk">
+</body>
+</html>
